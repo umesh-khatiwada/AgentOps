@@ -24,3 +24,23 @@ Flyte AgentOps provides a streamlined integration of Flyte, a cloud-native workf
 - [Flyte Website](https://flyte.org)
 - [GitHub Repository](https://github.com/flyteorg/flyte)
 - [User Guide](https://www.union.ai/docs/v2/flyte/user-guide/)
+
+
+pip install flyte
+
+
+
+flyte start devbox
+
+flyte create config \
+    --endpoint localhost:30080 \
+    --project flytesnacks \
+    --domain development \
+    --builder local \
+    --insecure
+
+
+    flyte stop devbox
+
+
+    https://www.union.ai/docs/v2/flyte/user-guide/run-modes/running-devbox/
